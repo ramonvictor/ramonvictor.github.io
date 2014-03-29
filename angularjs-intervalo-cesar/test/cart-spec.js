@@ -1,5 +1,5 @@
 var AngularHomepage = function() {
-  this.addToCart = element.all(by.partialButtonText('Add to Cart'));
+  this.addToCart = element.all(by.css('[ng-click="cart.addItem(product)"]'));
   this.secondProductName = element(by.repeater('product in home.getProducts()').row(1).column('name'));
   this.numberOfItems = element.all(by.binding('numberOfItems'));
 
@@ -20,7 +20,7 @@ var CartPage = function(){
 
 describe('angularjs homepage', function() {
 	var angularHomepage = new AngularHomepage();
-  	var cartPage = new CartPage();
+  var cartPage = new CartPage();
 
   	angularHomepage.get();
 
