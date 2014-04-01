@@ -1,5 +1,5 @@
 var CartHomepage = function() {
-  this.addToCart = element.all(by.partialButtonText('Add to Cart'));
+  this.addToCart = element.all( by.css('[ng-click="cart.addItem(product)"]') );
   this.secondProductName = element(by.repeater('product in home.getProducts()').row(1).column('name'));
   this.numberOfItems = element.all(by.binding('numberOfItems'));
 
@@ -17,12 +17,11 @@ var CartPage = function(){
 	this.totalEl = element.all(by.binding('cart.getTotal()'));
 };
 
-
 describe('angular commerce homepage', function() {
 	var cartHomepage = new CartHomepage();
   var cartPage = new CartPage();
 
-  	cartHomepage.get();
+  cartHomepage.get();
 
   it('should load the correct list of products', function() {
     expect(cartHomepage.secondProductName.getText()).toBe('Google Nexus 5 16GB - Black - Unlocked');
