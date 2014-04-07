@@ -1,0 +1,11 @@
+{
+  "name": "RV-FrontEnd-Framework",
+  "author": "Ramon Victor",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": "ramonvictor/rv-frontend-framework",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-protractor-qa": "*"
+  }
+}

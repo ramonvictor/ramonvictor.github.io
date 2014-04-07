@@ -3,7 +3,7 @@
 
     function homeController() {
         var vm = this;
-        vm.getProducts = function () {
+        vm.getListOfProducts = function () {
             return products;
         }
     }
