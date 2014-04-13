@@ -1,6 +1,7 @@
 # Compiled source #
 ###################
 *.sass-cache
+node_modules
 *.com
 *.class
 *.dll
