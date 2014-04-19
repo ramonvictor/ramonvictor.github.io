@@ -1,23 +1,7 @@
-var CartHomepage = function() {
-  this.addToCart = element.all( by.css('[ng-click="cart.addItem(product)"]') );
-  this.secondProductName = element( by.repeater('product in home.getListOfProducts()')
-                            .row(1).column('name') );
-  this.numberOfItems = element.all(by.binding('numberOfItems'));
+var CartHomepage = require('./po/home.po');
+var CartPage = require('./po/cart.po');
 
-  this.get = function() {
-    browser.get('http://ramonvictor.github.io/angularjs-intervalo-cesar/');
-  };
-
-  this.addToCartClick = function() {
-    this.addToCart.get(0).click();
-  };
-
-};
-
-var CartPage = function(){
-  this.totalEl = element.all(by.binding('cart.getTotal()'));
-	this.cartItem = element.all(by.model('cartItem.quantity'));
-};
+// Test scenario
 
 describe('angular commerce homepage', function() {
 	var cartHomepage = new CartHomepage();
