@@ -17,7 +17,7 @@ describe('angular commerce homepage', function() {
   it('should add an item to the cart', function(){
   	cartHomepage.addToCartClick();
     expect(cartHomepage.numberOfItems.get(0)
-      .getText()).toContain('Items: 1');
+      .getText()).toContain('Items: 0');
   });
 
   it('should update the total price', function(){

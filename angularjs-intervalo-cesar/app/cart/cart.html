@@ -8,7 +8,7 @@
     </tr>
     <tr ng-repeat="cartItem in cart.cartItems">
         <td class="cart-product-image">
-            <img ng-src="{{ cartItem.product.photoUrl }}" alt="{{ cartItem.product.name }}" />
+            <img id="foo" class="bar" ng-src="{{ cartItem.product.photoUrl }}" alt="{{ cartItem.product.name }}" />
         </td>
         <td>{{ cartItem.product.name }}</td>
         <td class="text-right">{{ cartItem.product.price | currency }}</td>
