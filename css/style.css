@@ -154,12 +154,18 @@ a:hover, a:active{
 	.center-container{
 		padding: 120px 30px 90px;
 	}
+
+	.section-second .center-container{
+		padding: 70px 30px 50px;
+	}
+
 	.articles-list > li{
 		width: auto;
 		float: none;
 		margin-bottom: 20px;
 		margin-right: 0;
 	}
+
 	.photo-bg{
 		background-position: 125% bottom;
 	}
